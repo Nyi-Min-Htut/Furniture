@@ -539,29 +539,29 @@
 </template>
 
 <script>
-import {
-  Modal,
-  Ripple,
-  initTE,
-} from "tw-elements";
-export default {
-    data() {
-    return {
-      mobile_nav: false,
-      web_nav:true
-    };
-    },
-    methods:{
-        menuBar(){
-            console.log('work');
-            this.mobile_nav =!this.mobile_nav;
-            this.web_nav = !this.web_nav;
+    import {
+    Modal,
+    Ripple,
+    initTE,
+    } from "tw-elements";
+    export default {
+        data() {
+        return {
+        mobile_nav: false,
+        web_nav:true
+        };
+        },
+        methods:{
+            menuBar(){
+                console.log('work');
+                this.mobile_nav =!this.mobile_nav;
+                this.web_nav = !this.web_nav;
+            }
+        },
+        mounted(){
+            initTE({ Modal, Ripple });
         }
-    },
-    mounted(){
-        initTE({ Modal, Ripple });
     }
-}
 </script>
 
 <style>
