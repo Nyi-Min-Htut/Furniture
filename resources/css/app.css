@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components{
+    .center{
+      
+        display:flex;
+        justify-content: center;;
+    }
+}
+
+body{
+    font-family: 'Lato', sans-serif;    
+}
+.brand_font_color{
+    color:#37ac58;
+}
+.brand_background_color{
+    background-color:#79cd90;
+}
+
+.sectionCutter_sm{
+    width:100%;
+    height:100px;
+}
+.sectionCutter_md{
+    width:100%;
+    height:200px;
+}
+
+.customWidth{
+    width:80%;
+}
+
+.line_height{
+    line-height:35px;
+}
+
+.custom_shadow{
+    box-shadow: 3px 5px 2px 2px rgba(0, 0, 0, 0.119);
+}
+
+.custom_input_shadow{
+    box-shadow:3px 5px 0px 0px rgba(99, 99, 99, 0.137);
+    transition:1s;
+}
+.custom_input_shadow:hover{
+    box-shadow:5px 5px 1px 1px rgba(142, 142, 142, 0.34);
+}
+
+.custom_border{
+    border:0.5px solid rgba(158, 158, 158, 0.155)
+}
