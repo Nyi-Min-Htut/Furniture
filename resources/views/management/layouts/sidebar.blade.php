@@ -12,16 +12,21 @@
 
     </div>
    
-    {{-- Sidebar items --}}
     <ul>
-        <li class='hover:bg-gray-900 pl-4 text-gray-400 hover:text-white cursor-pointer transition-all duration-500 py-3'>
-            <a href="{{route('admin')}}">Admin</a>
+        <li class="hover:bg-gray-800 pl-4 {{ trim($__env->yieldContent('admin')) ? 'bg-gray-900 text-white' : 'text-gray-400 hover:text-white' }} cursor-pointer transition-all duration-500 py-3">
+            <a href="{{ route('admin') }}">Admin</a>
         </li>
-        <li class='hover:bg-gray-900 pl-4 text-gray-400 hover:text-white cursor-pointer transition-all duration-500 py-3'>
-            <a href="{{route('category')}}">Category</a>
+
+        <li class="hover:bg-gray-800 pl-4 {{ trim($__env->yieldContent('category')) ? 'bg-gray-900 text-white' : 'text-gray-400 hover:text-white' }} cursor-pointer transition-all duration-500 py-3">
+            <a href="{{ route('category') }}">Categories</a>
         </li>
+
+        <li class="hover:bg-gray-800 pl-4 {{ trim($__env->yieldContent('variation')) ? 'bg-gray-900 text-white' : 'text-gray-400 hover:text-white' }} cursor-pointer transition-all duration-500 py-3">
+            <a href="{{ route('variation') }}">Variations</a>
+        </li>
+        
     </ul>
-    {{-- End Sidebar items --}}
+
 </div>
 
 <div id='sidebarBlack'  class='p-4  text-black' style='display:none'>
@@ -44,14 +49,14 @@
     }
 
     
-});
+    });
 
-var sidebarBlack = document.getElementById('sidebarBlack');
-var sidebar = document.getElementById('sidebar');
+    var sidebarBlack = document.getElementById('sidebarBlack');
+    var sidebar = document.getElementById('sidebar');
 
-sidebarBlack.addEventListener('click',function(){
-    sidebar.style.display = 'block'
-})
+    sidebarBlack.addEventListener('click',function(){
+        sidebar.style.display = 'block'
+    })
 
 
 

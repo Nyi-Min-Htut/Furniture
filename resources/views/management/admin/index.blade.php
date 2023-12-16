@@ -1,7 +1,7 @@
 @extends('management.layouts.main')
 
 @section('page_title', 'Variations')
-@section('variations', 'active-link')
+@section('admin', 'active-link')
 
 @section('content')
 

@@ -2,6 +2,6 @@
 @section('page_title','LoginRegister')
 @section('body-content')
 <div id='app'>
-    <login-register-component></login-register-component>
+    <login-component></login-component>
 </div>
 @endsection

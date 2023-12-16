@@ -30,17 +30,13 @@ class CategoryRepository implements CategoryRepositoryInterface{
     }
 
     public function delete(Category $category){
-       
-
-        // $category = Category::find($id);
-        // if(!$category || $category == null)
-        // {
-        //     return response()->json(['message' => 'No data found']);
-        // }else
-        // {
+        // if(!$category || $category==null){
         //     $category->delete();
-
-        //     return response()->json(['message' => 'Your Category Delete']);
+        //     return true;
+        // }else{
+        //     return false;
         // }
     }
+
+ 
 }

@@ -13,4 +13,5 @@ interface CategoryRepositoryInterface{
     public function createOrUpdate(Request $request);
 
     public function delete(Category $category);
+
 }

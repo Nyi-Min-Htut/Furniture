@@ -5,7 +5,7 @@
     @include('management.layouts.sidebar')
    </div>
     <div class='bg-gray-200 w-full  h-screen'>
-        <div class='mx-5 bg-indigo-50 rounded-sm shadow-md p-4 mt-10'>
+        <div class='mx-5  rounded-sm shadow-md  mt-10'>
             @yield('content')
         </div>
     </div>

@@ -15,11 +15,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/','user.home.index');
 
-Route::view('/login','management.loginRegister.index');
+Route::view('/login','user.loginRegister.login');
+Route::view('/register','user.loginRegister.register');
+
 
 Route::get('/dashboard', function () {
 return view('management.layouts.main');})->name('application');
 
 Route::view('/admins','management.admin.index')->name('admin');
 Route::view('/categories','management.category.index')->name('category');
+Route::view('/variations','management.variation.index')->name('variation');
+
 
